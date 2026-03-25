@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-shift$$
+  - '"'
   - $$mdi:volume-off$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
