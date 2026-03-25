@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - AltGr+N
+  - {t: '&m_n', s: '&m_N'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
