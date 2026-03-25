@@ -37,7 +37,26 @@
         tap-ms = <100>;
     };
 
+    macros {
+        m_n: m_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp N>;
+        };
+        m_N: m_N {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp LS(N)>;
+        };
+    };
+
     behaviors {
+        ntil: ntil {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&m_n>, <&m_N>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -56,7 +75,7 @@
             bindings = <
 &kp ESC         &kp N1    &kp N2        &kp N3     &kp N4            &kp N5    &kp UP_ARROW     &kp N6  &kp N7         &kp N8     &kp N9     &kp N0           &kp DELETE
 &kp TAB         &kp Q     &kp W         &kp E      &kp R             &kp T     &kp DOWN_ARROW   &kp Y   &kp U          &kp I      &kp O      &kp P            &kp PIPE
-&kp CAPS        &kp A     &kp S         &kp D      &kp F             &kp G     &kp LEFT_ARROW   &kp H   &kp J          &kp K      &kp L      &kp RA(N)        &kp APOS
+&kp CAPS        &kp A     &kp S         &kp D      &kp F             &kp G     &kp LEFT_ARROW   &kp H   &kp J          &kp K      &kp L      &ntil            &kp APOS
 &kp LEFT_SHIFT  &kp Z     &kp X         &kp C      &kp V             &kp B     &kp RIGHT_ARROW  &kp N   &kp M          &kp COMMA  &kp DOT    &kp MINUS        &kp SLASH
 &kp C_MUTE      &kp LGUI  &kp LEFT_ALT  &kp SPACE  &kp LEFT_CONTROL  &mo 1     &kp ENTER        &mo 2   &kp BACKSPACE  &kp ENTER  &kp COLON  &kp EXCLAMATION
             >;
