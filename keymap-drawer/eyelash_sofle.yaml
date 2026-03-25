@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - '!'
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -63,8 +63,8 @@ layers:
   - '2'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
   - ':'
+  - '!'
   layer1:
   - F11
   - F1
