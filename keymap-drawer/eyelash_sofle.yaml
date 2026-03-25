@@ -26,8 +26,8 @@ layers:
   - I
   - O
   - P
-  - '|'
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -39,8 +39,8 @@ layers:
   - K
   - L
   - {t: '&m_ntil', s: '&m_ntil_upper'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -52,19 +52,19 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '-', s: _}
-  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '''', s: '"'}
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '|'
+  - $$mdi:keyboard-space$$
   - ':'
-  - '!'
+  - {t: /, s: '?'}
   layer1:
   - F11
   - F1
