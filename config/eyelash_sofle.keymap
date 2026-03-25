@@ -38,12 +38,12 @@
     };
 
     macros {
-        m_n: m_n {
+        m_ntil: m_ntil {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(GRAVE) &kp N>;
         };
-        m_N: m_N {
+        m_ntil_upper: m_ntil_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(GRAVE) &kp LS(N)>;
@@ -54,7 +54,7 @@
         ntil: ntil {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&m_n>, <&m_N>;
+            bindings = <&m_ntil>, <&m_ntil_upper>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
