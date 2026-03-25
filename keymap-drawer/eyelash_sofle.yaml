@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - '!'
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -55,7 +55,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:volume-off$$
   - LGUI
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - layer1
@@ -63,8 +63,8 @@ layers:
   - '2'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - ':'
   - $$mdi:backspace-reverse-outline$$
+  - ':'
   layer1:
   - F11
   - F1
@@ -126,7 +126,7 @@ layers:
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '*'
   - PgDn
   - PG UP
   - '%'
