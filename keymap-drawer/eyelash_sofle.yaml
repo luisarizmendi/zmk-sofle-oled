@@ -122,10 +122,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - {t: '~', type: held}
   - $$mdi:mouse-left-click-outline$$
-  - PRINTSCREEN
+  - {t: '=', s: +}
   - '*'
   - PgDn
   - PG UP
