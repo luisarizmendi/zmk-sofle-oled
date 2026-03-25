@@ -41,12 +41,12 @@
         m_ntil: m_ntil {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(GRAVE) &kp N>;
+            bindings = <&kp TILDE &kp N>;
         };
         m_ntil_upper: m_ntil_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(GRAVE) &kp LS(N)>;
+            bindings = <&kp TILDE &kp LS(N)>;
         };
     };
 
