@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - {t: '&m_n', s: '&m_N'}
+  - {t: '&m_ntil', s: '&m_ntil_upper'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
