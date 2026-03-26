@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '-', s: _}
-  - '"'
+  - {t: /, s: '?'}
   - $$mdi:volume-off$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -64,7 +64,7 @@ layers:
   - '|'
   - $$mdi:keyboard-space$$
   - ':'
-  - {t: /, s: '?'}
+  - '"'
   MOVE:
   - F11
   - F1
@@ -116,8 +116,8 @@ layers:
   - RGB BRD
   - Ins
   - $
-  - (
-  - )
+  - {t: AltGr+5, s: AltGr+%}
+  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
