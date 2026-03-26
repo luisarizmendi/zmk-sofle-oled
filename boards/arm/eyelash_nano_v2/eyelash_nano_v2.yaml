@@ -1,0 +1,14 @@
+identifier: eyelash_nano_v2
+name: eyelash nano v2
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog
