@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: eyelash
       url-base: https://github.com/a741725193
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,8 +17,5 @@ manifest:
     - name: zmk-board-eyelash
       remote: eyelash
       revision: main
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: v0.3.0
   self:
     path: config
