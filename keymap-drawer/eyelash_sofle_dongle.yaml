@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&m_ntil', s: '&m_ntil_upper'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '-', s: _}
-  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -92,7 +92,7 @@ layers:
   - HOME
   - '{'
   - '}'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -120,7 +120,7 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   - {t: '~', type: held}
