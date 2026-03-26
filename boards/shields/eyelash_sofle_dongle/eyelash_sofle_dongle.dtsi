@@ -15,7 +15,7 @@
         zmk,battery = &vbatt;
         zmk,underglow = &led_strip;
         zmk,backlight = &backlight;
-        zmk,physical-layout = &eyelash_sofle_layout;
+        zmk,physical-layout = &eyelash_sofle_dongle_layout;
 
     };
 
