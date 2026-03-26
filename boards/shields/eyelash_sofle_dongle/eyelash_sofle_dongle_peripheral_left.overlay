@@ -5,7 +5,7 @@
 *
 */
 
-#include "eyelash_sofle.dtsi"
+#include "eyelash_sofle_dongle.dtsi"
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
