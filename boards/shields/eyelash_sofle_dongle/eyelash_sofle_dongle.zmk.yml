@@ -1,6 +1,6 @@
 file_format: "1"
 id: eyelash_sofle_dongle
-name: Eyelash Sofle Dongle
+name: Eyelash Sofle
 url: https://github.com/a741725193/zmk-sofle-dongle
 type: shield
 requires: [pro_micro]
