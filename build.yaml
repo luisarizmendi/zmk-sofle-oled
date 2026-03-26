@@ -26,5 +26,7 @@ include:
     artifact-name: eyeslash_sofle_central_dongle_oled
   - board: eyelash_nano
     shield: eyeslash_sofle_peripheral_left nice_oled
+    artifact-name: DONGLE-eyelash_sofle_peripheral_left_oled
   - board: eyelash_nano
     shield: eyeslash_sofle_peripheral_right nice_oled
+    artifact-name: DONGLE-eyelash_sofle_peripheral_right_oled
