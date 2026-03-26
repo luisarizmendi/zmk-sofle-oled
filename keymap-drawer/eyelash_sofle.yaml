@@ -116,7 +116,7 @@ layers:
   - RGB BRD
   - Ins
   - $
-  - (
+  - {t: AltGr+5, s: AltGr+%}
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
