@@ -64,7 +64,7 @@ layers:
   - '|'
   - $$mdi:keyboard-space$$
   - ':'
-  - '"'
+  - '&dquote'
   MOVE:
   - F11
   - F1
