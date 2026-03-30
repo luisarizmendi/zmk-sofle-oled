@@ -50,11 +50,22 @@
             bindings = <&kp TILDE &kp LS(N)>;
         };
 
-
         dquote: dquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+        };
+
+        m_squote: m_squote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SPACE>;
+        };
+
+        m_tilde: m_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp SPACE>;
         };
     };
 
@@ -63,7 +74,62 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&m_ntil>, <&m_ntil_upper>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
+        // / (no shift) and \ (shift)
+        sl_bs: sl_bs {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // . (no shift) and : (shift)
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // , (no shift) and ; (shift)
+        com_semi: com_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // dead acute (no shift) → á é í ó ú | ~ (shift)
+        acc_til: acc_til {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RA(SINGLE_QUOTE)>, <&m_tilde>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // " (no shift) and ' (shift)
+        qt: qt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&dquote>, <&m_squote>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // = (no shift) and | (shift)
+        eq_pipe: eq_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp PIPE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // $ (no shift) and € (shift)
+        dol_eur: dol_eur {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOLLAR>, <&kp RA(N5)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -82,11 +148,11 @@
 
         layer0 {
             bindings = <
-&kp ESC           &kp N1    &kp N2        &kp N3     &kp N4            &kp N5    &kp UP_ARROW     &kp N6  &kp N7    &kp N8     &kp N9     &kp N0             &kp DELETE
-&kp TAB           &kp Q     &kp W         &kp E      &kp R             &kp T     &kp DOWN_ARROW   &kp Y   &kp U     &kp I      &kp O      &kp P              &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A     &kp S         &kp D      &kp F             &kp G     &kp LEFT_ARROW   &kp H   &kp J     &kp K      &kp L      &ntil              &kp SLASH
-&kp LEFT_CONTROL  &kp Z     &kp X         &kp C      &kp V             &kp B     &kp RIGHT_ARROW  &kp N   &kp M     &kp COMMA  &kp DOT    &kp MINUS          &kp ENTER
-&kp C_MUTE        &kp LGUI  &kp LEFT_ALT  &kp SPACE  &kp SINGLE_QUOTE  &mo 1     &kp ENTER        &mo 2   &kp PIPE  &kp SPACE  &kp COLON  &dquote
+&kp ESC           &kp N1    &kp N2        &kp N3     &kp N4    &kp N5    &kp UP_ARROW     &kp N6  &kp N7      &kp N8      &kp N9     &kp N0    &kp DELETE
+&kp TAB           &kp Q     &kp W         &kp E      &kp R     &kp T     &kp DOWN_ARROW   &kp Y   &kp U       &kp I       &kp O      &kp P     &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A     &kp S         &kp D      &kp F     &kp G     &kp LEFT_ARROW   &kp H   &kp J       &kp K       &kp L      &ntil     &sl_bs
+&kp LEFT_CONTROL  &kp Z     &kp X         &kp C      &kp V     &kp B     &kp RIGHT_ARROW  &kp N   &kp M       &com_semi   &dot_colon &kp MINUS &kp ENTER
+&kp C_MUTE        &kp LGUI  &kp LEFT_ALT  &kp SPACE  &acc_til  &mo 1     &kp ENTER        &mo 2   &eq_pipe    &qt         &dol_eur   &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
