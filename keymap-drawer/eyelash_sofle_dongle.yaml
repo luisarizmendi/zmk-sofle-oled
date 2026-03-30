@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&m_ntil', s: '&m_ntil_upper'}
-  - {t: /, s: '?'}
+  - {t: /, s: \}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -49,22 +49,22 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - {t: '-', s: _}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '''', s: '"'}
+  - {t: AltGr+', s: '&m_tilde'}
   - MOVE
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SIGN
-  - '|'
-  - $$mdi:keyboard-space$$
-  - ':'
-  - '&dquote'
+  - {t: '=', s: '|'}
+  - {t: '&dquote', s: '&m_squote'}
+  - {t: $, s: AltGr+5}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   MOVE:
   - F11
   - F1
