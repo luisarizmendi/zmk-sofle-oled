@@ -64,7 +64,7 @@ layers:
   - {t: /, s: \}
   - $$mdi:keyboard-space$$
   - {t: $, s: AltGr+5}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '=', s: '|'}
   MOVE:
   - F12
   - F1
