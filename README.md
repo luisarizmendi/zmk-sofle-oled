@@ -21,4 +21,4 @@ For the left side, paste in "DONGLE-eyelash_sofle_peripheral_left_oled". For the
 
 ## Current Keymap
 
-![Sofle Keymap](keymap-drawer/eyelash_sofle.svg)
+![Sofle Keymap](keymap-drawer/eyelash_sofle_dongle.svg)

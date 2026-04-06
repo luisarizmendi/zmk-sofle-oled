@@ -113,8 +113,7 @@
         acc_til: acc_til {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp RA(SINGLE_QUOTE)>, <&m_tilde>;
-
+            bindings = <&kp SINGLE_QUOTE>, <&kp TILDE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -147,6 +146,13 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+    };
+
+    qmark_dollar: qmark_dollar {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp QUESTION>, <&kp DOLLAR>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     combos {
