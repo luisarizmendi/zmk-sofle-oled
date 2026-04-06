@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&m_ntil', s: '&m_ntil_upper'}
-  - {t: AltGr+', s: '&m_tilde'}
+  - {t: '''', s: '~'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
