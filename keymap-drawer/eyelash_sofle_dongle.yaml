@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&m_ntil', s: '&m_ntil_upper'}
-  - {t: /, s: \}
+  - {t: AltGr+', s: '&m_tilde'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -57,16 +57,16 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: AltGr+', s: '&m_tilde'}
+  - {t: '&dquote', s: '&m_squote'}
   - MOVE
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SIGN
-  - {t: '=', s: '|'}
-  - {t: '&dquote', s: '&m_squote'}
+  - {t: /, s: \}
+  - $$mdi:keyboard-space$$
   - {t: $, s: AltGr+5}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '=', s: '|'}
   MOVE:
-  - F11
+  - F12
   - F1
   - F2
   - F3
@@ -78,8 +78,8 @@ layers:
   - F8
   - F9
   - F10
-  - '&'
-  - F12
+  - F11
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
@@ -116,14 +116,14 @@ layers:
   - RGB BRD
   - Ins
   - $
-  - {t: AltGr+5, s: AltGr+%}
-  - {t: \, s: '|'}
+  - <
+  - '>'
   - $$mdi:volume-off$$
   - $$mdi:bluetooth-off$$
   - $$mdi:apple-keyboard-option$$
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - PRINTSCREEN
-  - {t: '~', type: held}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '=', s: +}
   - '*'
