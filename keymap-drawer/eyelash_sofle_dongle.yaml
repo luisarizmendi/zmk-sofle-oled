@@ -63,7 +63,7 @@ layers:
   - SIGN
   - {t: /, s: \}
   - $$mdi:keyboard-space$$
-  - {t: $, s: AltGr+5}
+  - {t: '?', s: $}
   - {t: '=', s: '|'}
   MOVE:
   - F12
