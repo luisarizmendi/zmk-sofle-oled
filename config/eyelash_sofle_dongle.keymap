@@ -62,10 +62,18 @@
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
         };
 
-        m_tilde: m_tilde {
+        m_grave: m_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(GRAVE) &kp SPACE>;
+            bindings = <&kp GRAVE &kp SPACE>;
+        };
+
+        // ¨ (dead diaeresis + space → literal ¨)
+        // Adjust LS(LEFT_BRACKET) if ¨ doesn't output correctly on your OS layout.
+        m_diae: m_diae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp SPACE>;
         };
     };
 
@@ -78,12 +86,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        // / (no shift) and \ (shift)
+        // / (no shift) and | (shift)
 
-        sl_bs: sl_bs {
+        sl_pipe: sl_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+            bindings = <&kp SLASH>, <&kp PIPE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -108,32 +116,33 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        // dead acute (no shift) → á é í ó ú | ~ (shift)
+        // dead acute (no shift) → á é í ó ú | ` (shift)
 
         acc_til: acc_til {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp TILDE>;
+            bindings = <&kp SINGLE_QUOTE>, <&m_grave>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        // " (no shift) and ' (shift)
+        // " (no shift) and ` (shift)
 
         qt: qt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&dquote>, <&m_squote>;
+            bindings = <&dquote>, <&m_grave>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        // = (no shift) and | (shift)
+        // ? (no shift) and ¿ (shift)
+        // RA(FSLH) is AltGr+/ → ¿ on ES layout. Adjust if needed.
 
-        eq_pipe: eq_pipe {
+        qmark_iquest: qmark_iquest {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp PIPE>;
+            bindings = <&kp QUESTION>, <&kp RA(FSLH)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -148,10 +157,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        qmark_dollar: qmark_dollar {
+        // = (no shift) and + (shift)
+
+        eq_plus: eq_plus {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp QUESTION>, <&kp DOLLAR>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -175,7 +186,7 @@
 &kp TAB           &kp Q     &kp W         &kp E      &kp R   &kp T     &kp DOWN_ARROW   &kp Y   &kp U   &kp I      &kp O          &kp P      &kp BACKSPACE
 &kp LEFT_SHIFT    &kp A     &kp S         &kp D      &kp F   &kp G     &kp LEFT_ARROW   &kp H   &kp J   &kp K      &kp L          &ntil      &acc_til
 &kp LEFT_CONTROL  &kp Z     &kp X         &kp C      &kp V   &kp B     &kp RIGHT_ARROW  &kp N   &kp M   &com_semi  &dot_colon     &kp MINUS  &kp ENTER
-&kp C_MUTE        &kp LGUI  &kp LEFT_ALT  &kp SPACE  &qt     &mo 1     &kp ENTER        &mo 2   &sl_bs  &kp SPACE  &qmark_dollar  &eq_pipe
+&kp C_MUTE        &kp LGUI  &kp LEFT_ALT  &kp SPACE  &qt     &mo 1     &kp ENTER        &mo 2   &sl_pipe  &kp SPACE  &eq_plus  &qmark_iquest
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
