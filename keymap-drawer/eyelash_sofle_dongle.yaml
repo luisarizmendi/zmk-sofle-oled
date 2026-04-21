@@ -115,7 +115,7 @@ layers:
   - RGB BRI
   - RGB BRD
   - Ins
-  - $
+  - '&m_cced'
   - <
   - '>'
   - $$mdi:volume-off$$
