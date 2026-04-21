@@ -125,7 +125,7 @@ layers:
   - PRINTSCREEN
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '=', s: +}
+  - '&m_diae'
   - {t: \, s: '|'}
   - PgDn
   - PG UP
