@@ -141,7 +141,7 @@
         qt: qt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&dquote>, <&m_grave>;
+            bindings = <&dquote>, <&kp CARET>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -209,7 +209,7 @@
 &trans        &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP         &kp HOME    &kp LEFT_BRACE    &kp RIGHT_BRACE
 &kp CAPSLOCK  &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN       &kp RIGHT   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans        &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT     &m_cced     &kp LESS_THAN     &kp GREATER_THAN
-&kp C_MUTE    &bt BT_CLR       &kp RALT        &bt BT_NXT       &kp PRINTSCREEN  &trans             &mkp LCLK        &m_diae          &kp BACKSLASH    &kp PAGE_DOWN  &kp PG_UP   &kp CARET
+&kp C_MUTE    &bt BT_CLR       &kp RALT        &bt BT_NXT       &kp PRINTSCREEN  &trans             &mkp LCLK        &m_diae          &kp BACKSLASH    &kp PAGE_DOWN  &kp PG_UP   &m_iexcl
             >;
 
             display-name = "MOVE";
