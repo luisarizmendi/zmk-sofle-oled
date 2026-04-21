@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&m_ntil', s: '&m_ntil_upper'}
-  - {t: '''', s: '~'}
+  - {t: '''', s: '&m_grave'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -57,14 +57,14 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '&dquote', s: '&m_squote'}
+  - {t: '&dquote', s: '&m_grave'}
   - MOVE
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SIGN
-  - {t: /, s: \}
+  - {t: /, s: '|'}
   - $$mdi:keyboard-space$$
-  - {t: '?', s: $}
-  - {t: '=', s: '|'}
+  - {t: '=', s: +}
+  - {t: '?', s: AltGr+/}
   MOVE:
   - F12
   - F1
